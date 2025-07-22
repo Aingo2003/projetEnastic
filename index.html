@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoWatch - Gestion de l'Environnement</title>
+    <meta name="description" content="Plateforme de signalement des événements climatiques et partage de bonnes pratiques environnementales">
+    <meta name="keywords" content="environnement, climat, signalement, écologie, bonnes pratiques">
+    <meta property="og:title" content="EcoWatch - Gestion de l'Environnement">
+    <meta property="og:description" content="Plateforme de signalement des événements climatiques et partage de bonnes pratiques environnementales">
+    <meta name="twitter:title" content="EcoWatch - Gestion de l'Environnement">
+    <meta name="twitter:description" content="Plateforme de signalement des événements climatiques et partage de bonnes pratiques environnementales">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #22c55e;
+            --secondary-color: #059669;
+            --accent-color: #fbbf24;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 rounded-lg font-medium transition-colors text-sm sm:text-base;
+        }
+        
+        .btn-secondary {
+            @apply bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 sm:px-6 rounded-lg font-medium transition-colors text-sm sm:text-base;
+        }
+        
+        .card {
+            @apply bg-white rounded-lg shadow-md p-4 sm:p-6 border border-gray-100;
+        }
+        
+        .input-field {
+            @apply w-full px-3 py-2 sm:px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm sm:text-base;
+        }
+        
+        .mobile-nav {
+            @apply md:hidden fixed inset-0 bg-black bg-opacity-50 z-50;
+        }
+        
+        .mobile-menu {
+            @apply bg-white w-64 h-full p-4 shadow-lg;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script>const ChartJS = window.Chart;</script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/UserProfile.js"></script>
+    <script type="text/babel" src="components/ReportEvent.js"></script>
+    <script type="text/babel" src="components/EventMap.js"></script>
+    <script type="text/babel" src="components/BestPractices.js"></script>
+    <script type="text/babel" src="components/Login.js"></script>
+    <script type="text/babel" src="components/AIRecommendations.js"></script>
+    <script type="text/babel" src="components/Messaging.js"></script>
+    <script type="text/babel" src="components/AdminDashboard.js"></script>
+    <script type="text/babel" src="components/Analytics.js"></script>
+    <script type="text/babel" src="components/Notifications.js"></script>
+    <script type="text/babel" src="components/Reports.js"></script>
+    <script type="text/babel" src="components/CommunityGroups.js"></script>
+    <script type="text/babel" src="utils/database.js"></script>
+    <script type="text/babel" src="utils/aiAgent.js"></script>
+    <script type="text/babel" src="utils/geolocation.js"></script>
+    <script type="text/babel" src="utils/storage.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
