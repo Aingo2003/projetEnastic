@@ -101,7 +101,8 @@ L'application est entièrement responsive et s'adapte aux différentes tailles d
 - Système de messagerie de groupe
 
 ## Support et Contact
-Pour toute question ou suggestion, contactez l'équipe EcoWatch.
+Pour toute question ou suggestion, contactez myaltabienaime@gmail.com ou +235 60 57 98 96
+.
 
 ## Licence
 Ce projet est sous licence MIT.
